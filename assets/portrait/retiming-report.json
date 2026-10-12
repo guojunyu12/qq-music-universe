@@ -1,0 +1,22 @@
+{
+  "body-calm": {
+    "frames": 72,
+    "duration": 3.0,
+    "originalDuration": 1.0,
+    "extraSeconds": 2.0,
+    "crossfadeFrames": 21,
+    "seamMeanPixelDelta": 1.0622782841435185,
+    "medianAdjacentDelta": 0.4474508101851852,
+    "seamRatio": 2.37406718227614
+  },
+  "body-peak": {
+    "frames": 58,
+    "duration": 2.4166666666666665,
+    "originalDuration": 0.4166666666666667,
+    "extraSeconds": 2.0,
+    "crossfadeFrames": 41,
+    "seamMeanPixelDelta": 0.5290295862268518,
+    "medianAdjacentDelta": 0.3140006510416667,
+    "seamRatio": 1.6848041062075747
+  }
+}
