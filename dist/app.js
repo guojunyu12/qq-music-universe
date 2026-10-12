@@ -93,8 +93,13 @@ function enter(withSound){
   ScrollTrigger.refresh();measure();
 }
 $('#enter-sound').addEventListener('click',()=>enter(true));$('#enter-muted').addEventListener('click',()=>enter(false));
-$('#index-button').addEventListener('click',()=>$('#index-dialog').showModal());
-$('#index-dialog').querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>$('#index-dialog').close()));
+const indexDrawer=$('#index-dialog');let drawerClosing=false;
+function openIndex(){drawerClosing=false;indexDrawer.showModal();gsap.fromTo(indexDrawer,{x:-28,opacity:0},{x:0,opacity:1,duration:reducedMotion.matches?0:.3,ease:'power3.out',overwrite:true});}
+function closeIndex(){if(!indexDrawer.open||drawerClosing)return;drawerClosing=true;gsap.to(indexDrawer,{x:-18,opacity:0,duration:reducedMotion.matches?0:.18,ease:'power2.in',overwrite:true,onComplete:()=>{indexDrawer.close();drawerClosing=false;gsap.set(indexDrawer,{clearProps:'transform,opacity'});}});}
+$('#index-button').addEventListener('click',openIndex);
+indexDrawer.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeIndex));
+indexDrawer.addEventListener('cancel',event=>{event.preventDefault();closeIndex();});
+function dismissDialog(dialog){if(dialog===indexDrawer)closeIndex();else dialog.close();}
 
 const galleryItems = [
   ['横屏模式 · AI 陪伴相框', '用 AI 创意定制横屏陪伴，给音乐一个温暖的画面。'],
@@ -137,11 +142,11 @@ $('#gallery').addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft') showGallery(galleryIndex - 1);
 });
 document.querySelectorAll('dialog').forEach(dialog => {
-  dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
+  dialog.querySelector('.dialog-close').addEventListener('click', () => dismissDialog(dialog));
   dialog.addEventListener('click', e => {
     if (e.target !== dialog) return;
     const bounds = dialog.getBoundingClientRect();
-    if (e.clientX < bounds.left || e.clientX > bounds.right || e.clientY < bounds.top || e.clientY > bounds.bottom) dialog.close();
+    if (e.clientX < bounds.left || e.clientX > bounds.right || e.clientY < bounds.top || e.clientY > bounds.bottom) dismissDialog(dialog);
   });
 });
 
@@ -156,10 +161,10 @@ function updateScroll() {
   if (index === currentChapter) return;
   currentChapter = index;
   $('#chapter-label').textContent = chapterNames[index];
-  $('#header-chapter').textContent = chapterNames[index];
-  document.querySelectorAll('.chapter-rail a').forEach((a, i) => {
-    a.classList.toggle('active', i === index);
-    if (i === index) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
+
+  document.querySelectorAll('.chapter-rail a, #index-dialog .index-links a').forEach((a, i) => {
+    a.classList.toggle('active', i % chapters.length === index);
+    if (i % chapters.length === index) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
   });
   document.querySelectorAll('.nav a').forEach((a, i) => a.classList.toggle('active', i === (index === 0 || index === 5 ? 0 : index === 4 ? 2 : 1)));
 }
