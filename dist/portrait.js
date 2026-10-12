@@ -1,18 +1,18 @@
 import * as THREE from 'three';
 import { clamp,damp,smoothStep } from './scene-math.js?v=editorial-4';
-import { gazeFiles,gazeIndex,gazeCoordinates,springStep } from './gaze-math.js?v=portrait-9';
+import { gazeFiles,gazeIndex,gazeCoordinates,springStep } from './gaze-math.js?v=tempo-14';
 import { trackAsset } from './loading.js?v=editorial-4';
 
 export const portraitAssets={
  atlas:'assets/portrait/head-atlas.webp',meta:'assets/portrait/head-atlas.json',blink:'assets/portrait/head-blink.webp',mask:'assets/portrait/head-mask.png',
- hair:'assets/portrait/hair-mask.png',skirt:'assets/portrait/skirt-mask.png',necklace:'assets/portrait/necklace-mask.png',track:'assets/portrait/body-head-track.json',
+ hair:'assets/portrait/hair-mask.png',skirt:'assets/portrait/skirt-mask.png',necklace:'assets/portrait/necklace-mask.png',track:'assets/portrait/body-head-track.json?v=tempo-14',
  still:'assets/raw/绿幕图/g05-正视.png',depth:'assets/portrait-depth.png',
  calm:'assets/portrait/body-calm',peak:'assets/portrait/body-peak'
 };
 
 function loadVideo(base){
  const video=document.createElement('video');video.muted=true;video.defaultMuted=true;video.playsInline=true;video.loop=true;video.preload='auto';
- const webm=video.canPlayType('video/webm; codecs="vp9"');video.src=base+(webm?'.webm?v=portrait-10':'.mp4?v=portrait-10');
+ const webm=video.canPlayType('video/webm; codecs="vp9"');video.src=base+(webm?'.webm?v=tempo-14':'.mp4?v=tempo-14');
  const ready=new Promise((resolve,reject)=>{
   const timer=setTimeout(()=>finish(new Error('Portrait video load timed out')),12000);
   const finish=error=>{clearTimeout(timer);video.removeEventListener('loadeddata',onLoad);video.removeEventListener('error',onError);error?reject(error):resolve(video);};
@@ -142,7 +142,7 @@ export async function createPortrait(mount,reducedMotion){
   peakEvidence=audio.playing&&energy>.42?peakEvidence+dt:Math.max(0,peakEvidence-dt*2);
   if(videos.peak&&!videos.peak.failed&&running&&peakEvidence>.8&&peakTarget===0){peakTarget=1;holdUntil=time+2.5;videos.peak.video.currentTime=0;synchronizeVideos();}
   if((!audio.playing||energy<.26)&&time>holdUntil)peakTarget=0;
-  peakMix=clamp(peakMix+(peakTarget?1:-1)*dt/.6,0,1);uniforms.uPeakMix.value=peakMix;
+  peakMix=clamp(peakMix+(peakTarget?1:-1)*dt/2.6,0,1);uniforms.uPeakMix.value=peakMix;
   uniforms.uVideo.value=running&&!videoFailed&&videos.calm&&!videos.calm.failed&&!videos.calm.blocked&&videos.calm.video.readyState>=2?1:0;
   uniforms.uTime.value=time;uniforms.uWind.value=reduced?0:1;uniforms.uKick.value=kick;uniforms.uEnergy.value=energy;uniforms.uShine.value=reduced?-1:shine;headTrack();
   const card=reduced||innerWidth<768?0:smoothStep(position/.7);uniforms.uCard.value=card;uniforms.uZoom.value=1-card*.22;uniforms.uOffset.value.x=innerWidth<768?0:-.14*uniforms.uFit.value.x*(1-card);mount.style.opacity=String(visible);mount.style.transform=reduced?'none':`translate3d(${pointer.x*.3}vw,${pointer.y*-.25}vh,0)`;document.querySelector('#atmosphere').style.opacity=String(.08*visible);

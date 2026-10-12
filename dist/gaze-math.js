@@ -11,7 +11,7 @@ export function gazeCoordinates(x,y,faceX=.64,faceY=.31){
   return {x:axis(x,faceX,8),y:axis(y,faceY,2)};
 }
 // Exact critically damped spring step; stable after fast pointer reversals.
-export function springStep(position,velocity,target,dt,omega=20){
+export function springStep(position,velocity,target,dt,omega=6/2.3){
   const t=Math.min(.05,Math.max(0,dt)),delta=position-target,c=velocity+omega*delta,e=Math.exp(-omega*t);
   return {position:target+(delta+c*t)*e,velocity:(velocity-omega*c*t)*e};
 }

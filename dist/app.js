@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { setupSmoothScroll, gsap, ScrollTrigger } from './scroll-motion.js?v=editorial-4';
 import { createTypeStage } from './type-stage.js?v=editorial-4';
-import { createPortrait } from './portrait.js?v=line-11';
+import { createPortrait } from './portrait.js?v=tempo-14';
 import { createDesignedStage } from './stage-design.js?v=portrait-10';
 import { themes } from './theme.js?v=editorial-4';
 import { trackAsset, assetsReady } from './loading.js?v=editorial-4';

@@ -5889,13 +5889,15 @@
         "sourceStartFrame": 0,
         "sourceEndFrame": 30,
         "fps": 24,
-        "frames": 24,
-        "duration": 1.0,
-        "crossfadeFrames": 7,
-        "loopBlend": "motion-compensated bidirectional DIS flow",
-        "seamMeanPixelDelta": 2.1793214699074075,
-        "medianAdjacentDelta": 1.183427734375,
-        "seamRatio": 1.8415332061305507
+        "frames": 72,
+        "duration": 3.0,
+        "crossfadeFrames": 21,
+        "loopBlend": "motion-compensated DIS flow with duration extension",
+        "seamMeanPixelDelta": 1.0622782841435185,
+        "medianAdjacentDelta": 0.4474508101851852,
+        "seamRatio": 2.37406718227614,
+        "originalDuration": 1.0,
+        "extraSeconds": 2.0
       }
     },
     {
@@ -11829,13 +11831,15 @@
         "sourceStartFrame": 0,
         "sourceEndFrame": 16,
         "fps": 24,
-        "frames": 10,
-        "duration": 0.4166666666666667,
-        "crossfadeFrames": 7,
-        "loopBlend": "motion-compensated bidirectional DIS flow",
-        "seamMeanPixelDelta": 2.0005855758101854,
-        "medianAdjacentDelta": 1.8513878038194445,
-        "seamRatio": 1.0805869908416506
+        "frames": 58,
+        "duration": 2.4166666666666665,
+        "crossfadeFrames": 41,
+        "loopBlend": "motion-compensated DIS flow with duration extension",
+        "seamMeanPixelDelta": 0.5290295862268518,
+        "medianAdjacentDelta": 0.3140006510416667,
+        "seamRatio": 1.6848041062075747,
+        "originalDuration": 0.4166666666666667,
+        "extraSeconds": 2.0
       }
     },
     {

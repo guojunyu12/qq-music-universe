@@ -10,7 +10,7 @@ for(const x of [0,.01,3.99,4,7.99,8])for(const y of [0,.99,1,1.99,2]){
  assert.ok(col>=0&&col<8&&row>=0&&row<2);
  assert.ok(weights.every(w=>w>=0&&w<=1));assert.ok(Math.abs(weights.reduce((a,b)=>a+b,0)-1)<1e-9);
 }
-const settle=dt=>{let state={position:0,velocity:0};for(let i=0;i<Math.round(.3/dt);i++)state=springStep(state.position,state.velocity,8,dt);return state;};
+const settle=dt=>{let state={position:0,velocity:0};for(let i=0;i<Math.round(2.3/dt);i++)state=springStep(state.position,state.velocity,8,dt);return state;};
 const a=settle(.01),b=settle(.02);assert.ok(Math.abs(a.position-b.position)<1e-9);assert.ok(Math.abs(a.position-8)<.15);
 let state={position:4,velocity:0};for(let i=0;i<200;i++){state=springStep(state.position,state.velocity,i%2?8:0,.016);assert.ok(Number.isFinite(state.position)&&Number.isFinite(state.velocity));}
 const tracks=JSON.parse(await readFile('dist/assets/portrait/body-head-track.json'));
