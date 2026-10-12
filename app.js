@@ -105,13 +105,16 @@ const galleryItems = [
   ['评论区发语音', '用语音传递听歌心情，让交流不止于文字。']
 ];
 let galleryIndex = 0;
+const galleryDots = galleryItems.map(([title],index) => {
+  const dot=document.createElement('button');dot.type='button';dot.className='gallery-dot';dot.setAttribute('aria-label',`查看${title}`);dot.addEventListener('click',()=>showGallery(index));$('#gallery-dots').appendChild(dot);return dot;
+});
 function showGallery(index) {
   galleryIndex = (index + galleryItems.length) % galleryItems.length;
   $('#gallery-img').src = `assets/official-${galleryIndex + 1}.webp`;
   $('#gallery-img').alt = `QQ音乐官方宣传图：${galleryItems[galleryIndex][0]}`;
   $('#gallery-title').textContent = galleryItems[galleryIndex][0];
   $('#gallery-description').textContent = galleryItems[galleryIndex][1];
-  $('#gallery-count').textContent = `${galleryIndex + 1} / ${galleryItems.length}`;
+  galleryDots.forEach((dot,i)=>{const selected=i===galleryIndex;dot.classList.toggle('active',selected);dot.setAttribute('aria-pressed',String(selected));});
   if (!$('#gallery').open) $('#gallery').showModal();
 }
 document.querySelectorAll('[data-open]').forEach(button => button.addEventListener('click', () => showGallery(Number(button.dataset.open))));
