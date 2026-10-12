@@ -254,3 +254,6 @@ body[data-theme=silver]{--bg:#0e1013;--accent:#d5dfdf}body[data-theme=pink]{--bg
 
 /* Number-free chapter rail; fine marks preserve every accessible chapter link. */
 .chapter-rail a::after{content:"";display:block;width:10px;height:1px;background:currentColor}.chapter-rail a.active::after{width:20px}.chapter-rail a{min-width:24px}
+
+.gallery-dots{display:flex;justify-content:center;align-items:center;gap:4px;margin-top:16px}.gallery-dot{width:24px;height:24px;padding:0;display:grid;place-items:center}.gallery-dot::before{content:"";width:6px;height:6px;border:1px solid var(--ink);border-radius:50%;opacity:.45;background:transparent}.gallery-dot.active::before{background:var(--ink);opacity:1}.gallery-dot:hover::before{opacity:1}.gallery-controls{gap:32px}
+.gallery-image img{max-height:min(67svh,calc(85svh - 144px))}@media(max-width:767px){.gallery-image img{max-height:45svh}}
