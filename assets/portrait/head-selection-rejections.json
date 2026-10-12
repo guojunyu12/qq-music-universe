@@ -1,0 +1,391 @@
+[
+  {
+    "source": "head-row1-a:0",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.17068808962511522
+  },
+  {
+    "source": "head-row1-a:1",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.19649672664221876
+  },
+  {
+    "source": "head-row1-a:2",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.20794628292612863
+  },
+  {
+    "source": "head-row1-a:3",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.24498738204460688
+  },
+  {
+    "source": "head-row1-a:4",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.42343911442236476
+  },
+  {
+    "source": "head-row1-a:5",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3003269437662
+  },
+  {
+    "source": "head-row1-a:6",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.4994789278431648
+  },
+  {
+    "source": "head-row1-a:7",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.5098346283852818
+  },
+  {
+    "source": "head-row1-a:8",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.5429293095072079
+  },
+  {
+    "source": "head-row1-a:9",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.5516120169740831
+  },
+  {
+    "source": "head-row1-a:12",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.413834201115018
+  },
+  {
+    "source": "head-row1-a:13",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.17056398071623421
+  },
+  {
+    "source": "head-row1-a:25",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.26883550817309315
+  },
+  {
+    "source": "head-row1-a:26",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.33521424763041335
+  },
+  {
+    "source": "head-row1-a:27",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3297059238157921
+  },
+  {
+    "source": "head-row1-a:28",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3115487882147842
+  },
+  {
+    "source": "head-row1-a:29",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3035395258915722
+  },
+  {
+    "source": "head-row1-a:30",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.37776578622213497
+  },
+  {
+    "source": "head-row1-a:31",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.25915346549084667
+  },
+  {
+    "source": "head-row1-a:32",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3330778531580211
+  },
+  {
+    "source": "head-row1-a:33",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.23739635244536939
+  },
+  {
+    "source": "head-row1-a:34",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.46195896222859867
+  },
+  {
+    "source": "head-row1-a:35",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.271088852284539
+  },
+  {
+    "source": "head-row1-a:36",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2862405472952176
+  },
+  {
+    "source": "head-row1-a:44",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.5091899396956079
+  },
+  {
+    "source": "head-row1-a:45",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.6908243999457332
+  },
+  {
+    "source": "head-row1-a:46",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.6492160772967515
+  },
+  {
+    "source": "head-row1-a:47",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.23584874739909167
+  },
+  {
+    "source": "head-row1-a:48",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.25139514357275006
+  },
+  {
+    "source": "head-row1-a:49",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.24555963089608115
+  },
+  {
+    "source": "head-row1-a:50",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.18386580444726805
+  },
+  {
+    "source": "head-row1-b:0",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3518873652566328
+  },
+  {
+    "source": "head-row1-b:1",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3735303161476741
+  },
+  {
+    "source": "head-row1-b:2",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.5380297588943349
+  },
+  {
+    "source": "head-row1-b:3",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3595996054102968
+  },
+  {
+    "source": "head-row1-b:4",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.1582245660004476
+  },
+  {
+    "source": "head-row1-b:5",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.1607923371870693
+  },
+  {
+    "source": "head-row1-b:6",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.37141106315837263
+  },
+  {
+    "source": "head-row1-b:8",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.42727343407802404
+  },
+  {
+    "source": "head-row1-b:9",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.4747308799709359
+  },
+  {
+    "source": "head-row1-b:10",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.36940972051924464
+  },
+  {
+    "source": "head-row2-a:0",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.26991903187296257
+  },
+  {
+    "source": "head-row2-a:1",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.20505455351198765
+  },
+  {
+    "source": "head-row2-a:2",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2015995951616966
+  },
+  {
+    "source": "head-row2-a:3",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.25194359253151455
+  },
+  {
+    "source": "head-row2-a:4",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.3057708435278782
+  },
+  {
+    "source": "head-row2-a:5",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.28520236517244185
+  },
+  {
+    "source": "head-row2-a:6",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.23321225197470907
+  },
+  {
+    "source": "head-row2-a:7",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2533628681911939
+  },
+  {
+    "source": "head-row2-a:8",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2319340802501458
+  },
+  {
+    "source": "head-row2-a:9",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2257863630113224
+  },
+  {
+    "source": "head-row2-a:10",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2609887510522675
+  },
+  {
+    "source": "head-row3-a:61",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.36244456714682693
+  },
+  {
+    "source": "head-row3-b:0",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.25521119467368136
+  },
+  {
+    "source": "head-row3-b:1",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.20148629590100273
+  },
+  {
+    "source": "head-row3-b:2",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.23488168606087936
+  },
+  {
+    "source": "head-row3-b:3",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.1956183202468385
+  },
+  {
+    "source": "head-row3-b:4",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2158363140454611
+  },
+  {
+    "source": "head-row3-b:5",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2681598218332986
+  },
+  {
+    "source": "head-row3-b:6",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.25924847069149703
+  },
+  {
+    "source": "head-row3-b:7",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.22649944331106825
+  },
+  {
+    "source": "head-row3-b:8",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.19477139696718856
+  },
+  {
+    "source": "head-row3-b:9",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.2113230220122847
+  },
+  {
+    "source": "head-row3-b:10",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.17858484200441693
+  },
+  {
+    "source": "head-row3-b:12",
+    "reason": "iris_disagrees_with_orientation_bin",
+    "irisError": 0.4469503211888326
+  },
+  {
+    "source": "head-row3-b:13",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:14",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:15",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:16",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:17",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:18",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:19",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:20",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:21",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:22",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:23",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:24",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:25",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:26",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:27",
+    "reason": "blink_or_closed_eyes"
+  },
+  {
+    "source": "head-row3-b:29",
+    "reason": "blink_or_closed_eyes"
+  }
+]
