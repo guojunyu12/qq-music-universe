@@ -1,0 +1,531 @@
+{
+  "columns": 9,
+  "rows": 3,
+  "tileSize": 384,
+  "textureSize": [
+    3456,
+    1152
+  ],
+  "crop": {
+    "left": 0.32,
+    "top": 0.1,
+    "width": 0.48,
+    "height": 0.34
+  },
+  "cropCoordinateSystem": "top-left normalized",
+  "referenceSize": [
+    720,
+    1280
+  ],
+  "yawCenters": [
+    -10.040225663656766,
+    -9.36939055811791,
+    -8.698555452579056,
+    -8.0277203470402,
+    -7.3568852415013435,
+    -6.686050135962488,
+    -6.015215030423633,
+    -5.344379924884777,
+    -4.6735448193459215
+  ],
+  "pitchCenters": [
+    -1.6725027510664165,
+    0.7698537389223954,
+    3.2122102289112076
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "column": 0,
+      "yaw": -10.384007583612636,
+      "pitch": -1.4023980219093073,
+      "actualYaw": -10.384007583612636,
+      "actualPitch": -1.4023980219093073,
+      "iris": [
+        {
+          "center": [
+            0.519131092429161,
+            0.2087958961725235
+          ],
+          "horizontal": 0.41217573801322505
+        },
+        {
+          "center": [
+            0.590232273141543,
+            0.22433801889419555
+          ],
+          "horizontal": 0.39034747189114394
+        }
+      ],
+      "source": "g01-左上.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "yaw": -10.072322147764044,
+      "pitch": -1.7411365071280152,
+      "interpolated": true,
+      "source": [
+        "grid:0,0",
+        "grid:0,4"
+      ],
+      "weight": 0.25,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "yaw": -9.760636711915453,
+      "pitch": -2.079874992346723,
+      "interpolated": true,
+      "source": [
+        "grid:0,0",
+        "grid:0,4"
+      ],
+      "weight": 0.5,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "yaw": -9.448951276066861,
+      "pitch": -2.418613477565431,
+      "interpolated": true,
+      "source": [
+        "grid:0,0",
+        "grid:0,4"
+      ],
+      "weight": 0.75,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "yaw": -9.13726584021827,
+      "pitch": -2.7573519627841385,
+      "actualYaw": -9.13726584021827,
+      "actualPitch": -2.7573519627841385,
+      "iris": [
+        {
+          "center": [
+            0.5265093020763663,
+            0.20816717445850372
+          ],
+          "horizontal": 0.4610351782208187
+        },
+        {
+          "center": [
+            0.5965976655979952,
+            0.22372578084468842
+          ],
+          "horizontal": 0.45877240515963646
+        }
+      ],
+      "source": "g02-上.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 0,
+      "column": 5,
+      "yaw": -8.48718365376004,
+      "pitch": -2.282453539214555,
+      "interpolated": true,
+      "source": [
+        "grid:0,4",
+        "grid:0,6"
+      ],
+      "weight": 0.5,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 0,
+      "column": 6,
+      "yaw": -7.83710146730181,
+      "pitch": -1.8075551156449712,
+      "actualYaw": -7.104167469944088,
+      "actualPitch": -3.1841148891218776,
+      "iris": [
+        {
+          "center": [
+            0.5365153341823153,
+            0.20645273178815843
+          ],
+          "horizontal": 0.5548007266711532
+        },
+        {
+          "center": [
+            0.6076438616712888,
+            0.22261498421430587
+          ],
+          "horizontal": 0.6099117301522626
+        }
+      ],
+      "source": "head-row1-b:7",
+      "interpolated": false,
+      "distance": 0.028149419219770253
+    },
+    {
+      "row": 0,
+      "column": 7,
+      "yaw": -7.18701928084358,
+      "pitch": -1.3326566920753877,
+      "interpolated": true,
+      "source": [
+        "grid:0,6",
+        "grid:0,8"
+      ],
+      "weight": 0.5,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 0,
+      "column": 8,
+      "yaw": -6.53693709438535,
+      "pitch": -0.8577582685058041,
+      "actualYaw": -6.53693709438535,
+      "actualPitch": -0.8577582685058041,
+      "iris": [
+        {
+          "center": [
+            0.5379926629530059,
+            0.211308291554451
+          ],
+          "horizontal": 0.6394801256885884
+        },
+        {
+          "center": [
+            0.6091949171324571,
+            0.22661839574575424
+          ],
+          "horizontal": 0.6924346333401695
+        }
+      ],
+      "source": "g03-右上.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "yaw": -11.54874552242827,
+      "pitch": 1.2846343836863128,
+      "actualYaw": -11.54874552242827,
+      "actualPitch": 1.2846343836863128,
+      "iris": [
+        {
+          "center": [
+            0.5103690509415335,
+            0.21341254711151122
+          ],
+          "horizontal": 0.365805973771295
+        },
+        {
+          "center": [
+            0.5820795085198349,
+            0.22741282880306243
+          ],
+          "horizontal": 0.34704819519005514
+        }
+      ],
+      "source": "g04-左.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "yaw": -10.2339868214332,
+      "pitch": 2.7571206627187355,
+      "interpolated": true,
+      "source": [
+        "grid:1,0",
+        "grid:1,4"
+      ],
+      "weight": 0.25,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "yaw": -8.919228120438131,
+      "pitch": 4.229606941751158,
+      "interpolated": true,
+      "source": [
+        "grid:1,0",
+        "grid:1,4"
+      ],
+      "weight": 0.5,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "yaw": -7.6044694194430615,
+      "pitch": 5.70209322078358,
+      "interpolated": true,
+      "source": [
+        "grid:1,0",
+        "grid:1,4"
+      ],
+      "weight": 0.75,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "yaw": -6.289710718447992,
+      "pitch": 7.174579499816003,
+      "actualYaw": -6.289710718447992,
+      "actualPitch": 7.174579499816003,
+      "iris": [
+        {
+          "center": [
+            0.5202089554899268,
+            0.22474687695503234
+          ],
+          "horizontal": 0.47151511994673534
+        },
+        {
+          "center": [
+            0.5921968568033642,
+            0.23536850661039352
+          ],
+          "horizontal": 0.5135076200561813
+        }
+      ],
+      "source": "g05-正视.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "yaw": -5.50460836184421,
+      "pitch": 4.978861113678793,
+      "interpolated": true,
+      "source": [
+        "grid:1,4",
+        "grid:1,8"
+      ],
+      "weight": 0.25,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 1,
+      "column": 6,
+      "yaw": -4.719506005240428,
+      "pitch": 2.7831427275415836,
+      "interpolated": true,
+      "source": [
+        "grid:1,4",
+        "grid:1,8"
+      ],
+      "weight": 0.5,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 1,
+      "column": 7,
+      "yaw": -3.934403648636645,
+      "pitch": 0.5874243414043736,
+      "interpolated": true,
+      "source": [
+        "grid:1,4",
+        "grid:1,8"
+      ],
+      "weight": 0.75,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 1,
+      "column": 8,
+      "yaw": -3.1493012920328627,
+      "pitch": -1.6082940447328362,
+      "actualYaw": -3.1493012920328627,
+      "actualPitch": -1.6082940447328362,
+      "iris": [
+        {
+          "center": [
+            0.5570159850021204,
+            0.21531038135290145
+          ],
+          "horizontal": 0.6337686373118446
+        },
+        {
+          "center": [
+            0.6268401589327388,
+            0.23035214543342591
+          ],
+          "horizontal": 0.7182824970354527
+        }
+      ],
+      "source": "g06-右.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "yaw": -8.187923884929393,
+      "pitch": 3.9309327466700394,
+      "actualYaw": -8.187923884929393,
+      "actualPitch": 3.9309327466700394,
+      "iris": [
+        {
+          "center": [
+            0.5244978781541189,
+            0.22014893889427184
+          ],
+          "horizontal": 0.5090810790577119
+        },
+        {
+          "center": [
+            0.5913718884024355,
+            0.23670850098133087
+          ],
+          "horizontal": 0.5077257898241263
+        }
+      ],
+      "source": "g07-左下.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "yaw": -7.48653986246448,
+      "pitch": 4.59548030602949,
+      "interpolated": true,
+      "source": [
+        "grid:2,0",
+        "grid:2,4"
+      ],
+      "weight": 0.25,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "yaw": -6.785155839999566,
+      "pitch": 5.260027865388942,
+      "interpolated": true,
+      "source": [
+        "grid:2,0",
+        "grid:2,4"
+      ],
+      "weight": 0.5,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "yaw": -6.083771817534653,
+      "pitch": 5.924575424748392,
+      "interpolated": true,
+      "source": [
+        "grid:2,0",
+        "grid:2,4"
+      ],
+      "weight": 0.75,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "yaw": -5.382387795069739,
+      "pitch": 6.589122984107844,
+      "actualYaw": -5.382387795069739,
+      "actualPitch": 6.589122984107844,
+      "iris": [
+        {
+          "center": [
+            0.5252084942824311,
+            0.22951193302869796
+          ],
+          "horizontal": 0.5200924311195382
+        },
+        {
+          "center": [
+            0.5931189966864056,
+            0.2451283484697342
+          ],
+          "horizontal": 0.5009576591966055
+        }
+      ],
+      "source": "g08-下.png",
+      "interpolated": false,
+      "distance": 0.0
+    },
+    {
+      "row": 2,
+      "column": 5,
+      "yaw": -5.120389864207192,
+      "pitch": 4.720985977069817,
+      "interpolated": true,
+      "source": [
+        "grid:2,4",
+        "grid:2,8"
+      ],
+      "weight": 0.25,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 2,
+      "column": 6,
+      "yaw": -4.858391933344645,
+      "pitch": 2.852848970031791,
+      "interpolated": true,
+      "source": [
+        "grid:2,4",
+        "grid:2,8"
+      ],
+      "weight": 0.5,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 2,
+      "column": 7,
+      "yaw": -4.596394002482099,
+      "pitch": 0.984711962993765,
+      "interpolated": true,
+      "source": [
+        "grid:2,4",
+        "grid:2,8"
+      ],
+      "weight": 0.75,
+      "method": "OpenCV DIS bidirectional flow"
+    },
+    {
+      "row": 2,
+      "column": 8,
+      "yaw": -4.334396071619552,
+      "pitch": -0.8834250440442614,
+      "actualYaw": -4.334396071619552,
+      "actualPitch": -0.8834250440442614,
+      "iris": [
+        {
+          "center": [
+            0.544527561581797,
+            0.2185048133134842
+          ],
+          "horizontal": 0.5753554341301331
+        },
+        {
+          "center": [
+            0.6115241116947598,
+            0.23541415184736253
+          ],
+          "horizontal": 0.6495444640526977
+        }
+      ],
+      "source": "g09-右下.png",
+      "interpolated": false,
+      "distance": 0.0
+    }
+  ],
+  "alignment": "eye corners 33/263 and nose 1; similarity; rotation limited to 8 degrees",
+  "selection": "measured yaw/pitch bins, iris residual tie-break; optical-flow fill only empty cells"
+}

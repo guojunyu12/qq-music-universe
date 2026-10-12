@@ -1,6 +1,6 @@
 # QQ 音乐 · 让音乐发生
 
-PC 优先的单页产品展示：杂志式字体与 12 栏网格、Three.js 黑胶与反射舞台、九方向人物视线、深度视差、配乐频谱、三色主题和 GSAP / Lenis 滚动编排。
+PC 优先的单页产品展示：杂志式字体与 12 栏网格、Three.js 黑胶与反射舞台、视频人物、连续视线与自动眨眼、深度视差、配乐频谱、三色主题和 GSAP / Lenis 滚动编排。
 
 ## 预览与检查
 
@@ -29,4 +29,6 @@ git subtree push --prefix=dist origin gh-pages
 
 所有字体、人物图、深度图、官方宣传图和音乐均在仓库内，使用相对路径，支持 GitHub Pages 的仓库子路径。手机与减少动态模式关闭固定画面和 scrub；手机关闭反射与体积光。
 
-人物使用九方向头部图的柔边混合与深度视差。当前为 MVP 素材。来源、字体与第三方许可见页面「素材来源」、`DESIGN-NOTES.md`、`dist/vendor/` 和 `dist/assets/fonts/licenses/`。本页为独立展示设计。
+人物使用静音绿幕身体视频、9×3 头部图集双线性混合、自动眨眼与深度视差；发梢、裙摆、项链和舞台联动实时频谱。图集/视频/WebGL 不可用时保留分层降级。头部裁切边界采用无 mipmap 的线性采样及透明羽化，章节目录和侧栏已去除括号编号。
+
+当前是 MVP 素材，身体循环时长受合格帧限制。处理与验证记录见 `PORTRAIT-IMPLEMENTATION.md`、`dist/assets/portrait/REPORT.md`。字体与第三方许可见 `dist/vendor/` 和 `dist/assets/fonts/licenses/`。本页为独立展示设计。

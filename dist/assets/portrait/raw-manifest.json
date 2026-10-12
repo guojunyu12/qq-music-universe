@@ -1,0 +1,137 @@
+[
+  {
+    "path": "01-左上.jpg",
+    "sha256": "b3ca0681f112a0be582513793351c276ff02adce682a6ae1db5ace086e5294b6",
+    "bytes": 537003
+  },
+  {
+    "path": "02-上.jpg",
+    "sha256": "82cf5a3aa1de29ae05ef86ee9b341dd8f4ab8740dc4fa0d80526f252aabdff06",
+    "bytes": 531737
+  },
+  {
+    "path": "03-右上.jpg",
+    "sha256": "75f0f3c7010af1f76c9761f25b8404d739d83dbd96ca8e7db5e2376b1a2dcb0c",
+    "bytes": 529966
+  },
+  {
+    "path": "04-左.jpg",
+    "sha256": "66dcb1470f972ffe536b02b42a09c06d5aff340151bea112993692729b322b03",
+    "bytes": 532856
+  },
+  {
+    "path": "05-正视.jpg",
+    "sha256": "51efab8ddccc96d4452c5e083f19aa3c5bc1639538a91a0d0801fd3f5b8c34b2",
+    "bytes": 541802
+  },
+  {
+    "path": "06-右.jpg",
+    "sha256": "2d0235c6044f3ddc0060a4e44816857f6618eef43009549ed291afea8d347685",
+    "bytes": 533486
+  },
+  {
+    "path": "07-左下.jpg",
+    "sha256": "79aacc22b33149cd73497e376600075794361564d504f7205406ef590129c02e",
+    "bytes": 534356
+  },
+  {
+    "path": "08-下.jpg",
+    "sha256": "511afc1ba9d9bf1780eed1d8662ebf67ecefde280d50be1cdcd49ea6a0b921f1",
+    "bytes": 531767
+  },
+  {
+    "path": "09-右下.jpg",
+    "sha256": "88ad29249b251ebb7279cbb6fbea630e4298d645efa0221959bc956ac0452c23",
+    "bytes": 531742
+  },
+  {
+    "path": "绿幕图/g01-左上.png",
+    "sha256": "5fe41fbb845c26116be0a6e8a2ef09ee6f25e82404cf0246aff74013a2819eef",
+    "bytes": 3272142
+  },
+  {
+    "path": "绿幕图/g02-上.png",
+    "sha256": "175f8ee4b252cbd99d883d8a4f7c2a582ee87a8ebf87daa3ca72bf0f81966e4e",
+    "bytes": 3228880
+  },
+  {
+    "path": "绿幕图/g03-右上.png",
+    "sha256": "8508aa0864e7255e3ee18a7ee675b994c3e400e8b8c5e25d07d09c424a1d6d35",
+    "bytes": 3229481
+  },
+  {
+    "path": "绿幕图/g04-左.png",
+    "sha256": "a665bbbcf6466b8513a5f73708b8f57ea3d2a17a3e91f722a3915d9a1d15355b",
+    "bytes": 3256190
+  },
+  {
+    "path": "绿幕图/g05-正视.png",
+    "sha256": "eec68e9d214822e48af6ab8d54cf9e515efabd8b7697171e066ce438c96536f3",
+    "bytes": 3286862
+  },
+  {
+    "path": "绿幕图/g05-闭眼.png",
+    "sha256": "3d872d071e3e27d5841dbdc8528a936e77924eca87cb0daa25414d551cdf45e6",
+    "bytes": 3536237
+  },
+  {
+    "path": "绿幕图/g06-右.png",
+    "sha256": "9c2f177c1f56d3212f3d1cb0328af547f05d1ff00a51976f57ebb890efeba626",
+    "bytes": 3246646
+  },
+  {
+    "path": "绿幕图/g07-左下.png",
+    "sha256": "32b8a15ecc5cabcd59432155ddd7b6fa7e765c4b77bd2e6be4abcac5dd6b261f",
+    "bytes": 3260738
+  },
+  {
+    "path": "绿幕图/g08-下.png",
+    "sha256": "3cd33e69fb8fbaa078b0c402c9d4377e27a2d905a99347f090bc2b95eb6e7654",
+    "bytes": 3246208
+  },
+  {
+    "path": "绿幕图/g09-右下.png",
+    "sha256": "b24a50f08b731dd4118a525f36046e03aa3578e63e5e085028d3c515a5cb8070",
+    "bytes": 3255271
+  },
+  {
+    "path": "绿幕视频/body-calm.mp4",
+    "sha256": "f229e8149e5ac2e79bab539d9504535d9e06c1dd70f9f809ad992f9db8c391db",
+    "bytes": 1021767
+  },
+  {
+    "path": "绿幕视频/body-peak.mp4",
+    "sha256": "b022df1e00e0f9fe756598416191b4b0efc7d3e4ce940d7966907d9b627627f9",
+    "bytes": 1248104
+  },
+  {
+    "path": "绿幕视频/head-row1-a.mp4",
+    "sha256": "8d9fabc2e7c0ead8ad92cbe801bb474f3762e3604f0a116d72a79c41223f1aab",
+    "bytes": 1110662
+  },
+  {
+    "path": "绿幕视频/head-row1-b.mp4",
+    "sha256": "028184dfae56497bbc05e3732a90deec248475cf4b76063df83d4985c75aabce",
+    "bytes": 1854916
+  },
+  {
+    "path": "绿幕视频/head-row2-a.mp4",
+    "sha256": "0eac7f2396749bac04717af4ac0bf9badd1e39175a3ecfe0fad230372f1f5c62",
+    "bytes": 1431558
+  },
+  {
+    "path": "绿幕视频/head-row2-b.mp4",
+    "sha256": "af3263637125b4a19fd3fff8490adb19003950ce8cb73144aa0ca966922701cf",
+    "bytes": 1651835
+  },
+  {
+    "path": "绿幕视频/head-row3-a.mp4",
+    "sha256": "6cda8a5236e966a7fcd30a63f8e5cb17e3c16b7f54195f99bf1961cb9e8c2d48",
+    "bytes": 2155020
+  },
+  {
+    "path": "绿幕视频/head-row3-b.mp4",
+    "sha256": "b43e2a4998283c5543777669871b2c3d647a46e9b0348b7b31ce667cd645afea",
+    "bytes": 1140254
+  }
+]

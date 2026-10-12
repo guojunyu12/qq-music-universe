@@ -1,15 +1,15 @@
 import * as THREE from 'three';
 import { setupSmoothScroll, gsap, ScrollTrigger } from './scroll-motion.js?v=editorial-4';
 import { createTypeStage } from './type-stage.js?v=editorial-4';
-import { createPortrait } from './portrait.js?v=editorial-4';
-import { createDesignedStage } from './stage-design.js?v=editorial-4';
+import { createPortrait } from './portrait.js?v=line-11';
+import { createDesignedStage } from './stage-design.js?v=portrait-10';
 import { themes } from './theme.js?v=editorial-4';
 import { trackAsset, assetsReady } from './loading.js?v=editorial-4';
 import { clamp, chapterPosition, smoothStep, damp } from './scene-math.js?v=editorial-4';
 
 const $ = selector => document.querySelector(selector);
 const chapters = [...document.querySelectorAll('.chapter')];
-const chapterNames = ['音乐舞台', '播放与歌词', '发现与推荐', '音质与音效', '个性表达', '尾声'];
+const chapterNames = ['音乐现场', '播放与歌词', '发现好音乐', '沉浸音质', '个性播放器', '继续聆听'];
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const audio = $('#music');
 let audioContext, analyser, audioData, audioBusy = false, noticeTimer;
@@ -129,7 +129,7 @@ document.querySelectorAll('dialog').forEach(dialog => {
     if (e.clientX < bounds.left || e.clientX > bounds.right || e.clientY < bounds.top || e.clientY > bounds.bottom) dialog.close();
   });
 });
-$('#credits-button').addEventListener('click', () => $('#credits').showModal());
+
 
 let offsets = [], currentChapter = -1, scrollPosition = 0;
 function measure() { offsets = chapters.map(el => el.offsetTop); updateScroll(); }
@@ -141,7 +141,7 @@ function updateScroll() {
   if (index === currentChapter) return;
   currentChapter = index;
   $('#chapter-label').textContent = chapterNames[index];
-  $('#header-chapter').textContent = `(${String(index+1).padStart(2,'0')}) / ${chapterNames[index]}`;
+  $('#header-chapter').textContent = chapterNames[index];
   document.querySelectorAll('.chapter-rail a').forEach((a, i) => {
     a.classList.toggle('active', i === index);
     if (i === index) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current');
@@ -193,7 +193,7 @@ function buildSpace() {
   function mesh(geometry,material,parent,x=0,y=0,z=0){const object=new THREE.Mesh(geometry,material);object.position.set(x,y,z);parent.add(object);return object;}
   const designedStage=createDesignedStage(scene,world,reducedMotion);
   let portrait = null;
-  trackAsset(createPortrait($('#portrait'), reducedMotion)).then(result => { portrait = result; designedStage.setPortrait(result.image,result.depth); })
+  trackAsset(createPortrait($('#portrait'), reducedMotion)).then(result => { portrait = result; window.__portrait=result; designedStage.setPortrait(result.image,result.depth); })
     .catch(error => { console.error('Portrait depth effect unavailable:', error); $('#portrait').classList.add('static-portrait'); });
 
   const floaters=[];
@@ -271,8 +271,8 @@ function buildSpace() {
     const isPlayer=smoothedPosition>.95&&smoothedPosition<1.85,isDiscover=Math.abs(smoothedPosition-2)<.7,isPersonal=Math.abs(smoothedPosition-4)<.7;
     playerPhone.visible=isPlayer;discoverPhone.visible=isDiscover;personalPhone.visible=isPersonal;
 
-    if (portrait) portrait.update(smoothedPosition, dt, bass);
     if(analyser&&!audio.paused){mid=bandEnergy(250,2000);high=bandEnergy(2000,8000);}else{mid=high=0;}
+    if(portrait)portrait.update(smoothedPosition,dt,{bass,mid,high,energy:(bass+mid+high)/3,playing:!audio.paused});
     designedStage.update({time,bass,mid,high,color:themeColor,pointer:reducedMotion.matches?{x:0,y:0}:stagePointer,dt});
     scene.background.lerp(backgroundColor,1-Math.exp(-dt*3));scene.fog.color.copy(scene.background);
     const entrance=smoothStep((smoothedPosition-.2)/.8);
