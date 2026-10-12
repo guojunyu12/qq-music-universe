@@ -104,12 +104,13 @@ const galleryItems = [
   ['AI 助手 · 识图推歌', '通过画面寻找音乐，让此刻的氛围有自己的 BGM。'],
   ['评论区发语音', '用语音传递听歌心情，让交流不止于文字。']
 ];
-let galleryIndex = 0;
+let galleryIndex = 0, galleryWheelTotal = 0, galleryWheelAt = 0, galleryWheelChangedAt = -500;
 const galleryDots = galleryItems.map(([title],index) => {
   const dot=document.createElement('button');dot.type='button';dot.className='gallery-dot';dot.setAttribute('aria-label',`查看${title}`);dot.addEventListener('click',()=>showGallery(index));$('#gallery-dots').appendChild(dot);return dot;
 });
 function showGallery(index) {
   galleryIndex = (index + galleryItems.length) % galleryItems.length;
+  galleryWheelTotal = 0;
   $('#gallery-img').src = `assets/official-${galleryIndex + 1}.webp`;
   $('#gallery-img').alt = `QQ音乐官方宣传图：${galleryItems[galleryIndex][0]}`;
   $('#gallery-title').textContent = galleryItems[galleryIndex][0];
@@ -118,8 +119,19 @@ function showGallery(index) {
   if (!$('#gallery').open) $('#gallery').showModal();
 }
 document.querySelectorAll('[data-open]').forEach(button => button.addEventListener('click', () => showGallery(Number(button.dataset.open))));
-$('#gallery-prev').addEventListener('click', () => showGallery(galleryIndex - 1));
-$('#gallery-next').addEventListener('click', () => showGallery(galleryIndex + 1));
+document.querySelector('.gallery-image').addEventListener('wheel',event=>{
+  if(!$('#gallery').open||event.ctrlKey)return;
+  event.preventDefault();event.stopPropagation();
+  const now=performance.now();
+  if(now-galleryWheelChangedAt<400)return;
+  if(now-galleryWheelAt>250)galleryWheelTotal=0;
+  galleryWheelAt=now;
+  const unit=event.deltaMode===1?16:event.deltaMode===2?innerHeight:1;
+  galleryWheelTotal+=(Math.abs(event.deltaX)>Math.abs(event.deltaY)?event.deltaX:event.deltaY)*unit;
+  if(Math.abs(galleryWheelTotal)>=60){
+    const direction=Math.sign(galleryWheelTotal);galleryWheelChangedAt=now;showGallery(galleryIndex+direction);
+  }
+},{passive:false});
 $('#gallery').addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') showGallery(galleryIndex + 1);
   if (e.key === 'ArrowLeft') showGallery(galleryIndex - 1);
